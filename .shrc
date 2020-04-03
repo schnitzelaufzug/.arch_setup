@@ -1,0 +1,15 @@
+# aliase
+alias nightmode='xrandr --output eDP1 --brightness 0.7'
+alias daymode='xrandr --output eDP1 --brightness 1'
+alias superdaymode='xrandr --output eDP1 --brightness 1.5'
+
+
+alias ..='cd ..'
+alias ls='lsd'
+alias grep='ag'
+#alias ls='ls -hNl --color=auto --group-directories-first'
+alias rm='rm -rf'
+alias c='clear'
+alias rm-orphans='sudo pacman -Rns $(pacman -Qtdq)'
+alias home='xrandr --output DP2-1 --mode 1920x1080 --output eDP1 --off'
+
