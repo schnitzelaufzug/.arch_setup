@@ -7,6 +7,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'stephpy/vim-php-cs-fixer'
+Plugin 'dense-analysis/ale'
 "Plugin 'rking/ag.vim'
 "Plugin 'skwp/greplace.vim'
 "Plugin 'msanders/snipmate.vim'

@@ -29,6 +29,11 @@ separator_block_width=15
 markup=none
 
 
+# Draht Driller Email
+[gmail]
+label=Driller 
+separator=true
+interval=10
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
