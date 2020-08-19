@@ -34,6 +34,10 @@ git clone https://github.com/vivien/i3blocks-contrib ~/.config/i3blocks/scripts
     || mkdir ~/.config/compton/
 ln -s $arch_setup/compton/config ~/.config/compton/
 
+[ -d ~/.config/git/ ] \
+    && rm -rf ~/.config/git/* \
+    || mkdir ~/.config/git/
+ln -s $arch_setup/git/ignore ~/.config/git/
 
 for file in $dotfiles/.*; do
 	[ -f $file ] \
