@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/phil/.vim'
+let g:netrw_dirhist_5='/home/phil/.dotfiles/.vim'
+let g:netrw_dirhist_4='/home/phil/.dotfiles/.git'
+let g:netrw_dirhist_3='/home/phil/.dotfiles'
 let g:netrw_dirhist_2='/home/phil/code/shopware5/shopware/engine/Shopware/Models/Order'
 let g:netrw_dirhist_1='/home/phil/code/draht-driller/repos/WebABASExport/Utils'
 let g:netrw_dirhist_0='/home/phil/code/draht-driller/repos/WebABASExport'
 let g:netrw_dirhist_9='/home/phil/code/draht-driller/repos/WebABASExport/Utils'
 let g:netrw_dirhist_8='/home/phil/code/draht-driller/repos/WebABASExport'
 let g:netrw_dirhist_7='/home/phil/code/draht-driller/repos/WebDecimalAmounts/Subscribers'
-let g:netrw_dirhist_6='/home/phil/code/draht-driller/repos/WebDecimalAmounts'
-let g:netrw_dirhist_5='/home/phil/code/draht-driller/repos/WebDecimalAmounts/SearchBundleDBAL'
-let g:netrw_dirhist_4='/home/phil/code/Sodabaer/de/plugins/retourenliste2/src/components'
-let g:netrw_dirhist_3='/home/phil/code/Sodabaer/de/plugins/retourenliste2/src'

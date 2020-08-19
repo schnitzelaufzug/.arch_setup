@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#install jq for this to work
+workspaces=( $(i3-msg -t get_workspaces | jq '.[]|.num' | sort -n) )
+
+for i in $(seq 1 10); do
+    if [[ ${workspaces[$i-1]} != $i ]]; then
+        i3-msg workspace $i
+        break
+    fi
+done
