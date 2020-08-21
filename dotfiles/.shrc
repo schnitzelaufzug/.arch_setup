@@ -13,3 +13,5 @@ alias c='clear'
 alias rm-orphans='sudo pacman -Rns $(pacman -Qtdq)'
 alias home='xrandr --output DP2-1 --mode 1920x1080 --output eDP1 --off'
 
+export VISUAL=vim
+export EDITOR="$VISUAL"
