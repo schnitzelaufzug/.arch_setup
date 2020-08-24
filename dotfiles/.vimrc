@@ -83,13 +83,19 @@ nmap <c-f> :g/function/#<CR>
 "----------------Mappings-------------"
 
 "Make it easy to edit the .vimrc file"
-nmap <leader>ev :tabedit ~/.dotfiles/.vim/.vimrc<cr>
+nmap <leader>ev :tabedit ~/.vimrc<cr>
 
 "add simple Higlight removal."
 nmap <leader><space> :nohlsearch<cr>
 
 "mapping jk to esc to exit insert mode
 imap jk <esc>
+
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
 
 "nnoremap <C-p> :CtrlP<cr>
 

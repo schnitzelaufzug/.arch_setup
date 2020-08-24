@@ -1,5 +1,5 @@
 #install i3-gaps
-pacman -S xorg-server xorg-xinit xorg-xinput xf86-input-libinput acpi i3-gaps i3blocks i3lock dmenu zsh the_silver_searcher feh flameshot lsd xfce4-terminal firefox alsa-utils weechat gvim php ctags openssh filezilla --noconfirm
+pacman -S xorg-server xorg-xinit xorg-xinput xf86-input-libinput acpi i3-gaps i3blocks i3lock dmenu zsh the_silver_searcher feh flameshot lsd xfce4-terminal firefox alsa-utils weechat gvim php ctags openssh filezilla docker docker-compose unzip --noconfirm
 pacman -S compton --noconfirm
 
 #Install oh-my-zsh
