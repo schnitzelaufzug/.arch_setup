@@ -2,6 +2,7 @@
 alias nightmode='xrandr --output eDP --brightness 0.7'
 alias daymode='xrandr --output eDP --brightness 1'
 alias superdaymode='xrandr --output eDP --brightness 1.5'
+alias packup='pacman -Qqen > ~/.arch_setup/pkglist.txt && pacman -Qqem > ~/.arch_setup/pkglist_aur.txt'
 
 
 alias ..='cd ..'

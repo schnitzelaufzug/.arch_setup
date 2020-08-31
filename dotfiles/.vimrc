@@ -27,6 +27,7 @@ set relativenumber
 set numberwidth=1
 set cursorline					" higlights current line of curser
 set scrolloff=2                 " Keep two lines below or above the cursor
+set wildmode=longest,list,full
 set wildmenu					" displays a graphical interface for tabcompletes
 
 "set listchars=tab:\|\ 
@@ -94,6 +95,8 @@ imap jk <esc>
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
+inoremap [ []<left>
+inoremap [<CR> [<CR>]<ESC>O
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 
