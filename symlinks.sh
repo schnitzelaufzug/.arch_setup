@@ -5,6 +5,9 @@ dotfiles=$arch_setup/dotfiles
 
 echo "This script will add symlinks from dotfiles to home directory"
 
+
+rm -rf ~/.vim ~/.vimrc ~/.zshrc
+
 ln -s $arch_setup/.vim/ ~/
 
 # if vundle allready exists don't install
@@ -39,6 +42,7 @@ ln -s $arch_setup/compton/config ~/.config/compton/
     || mkdir ~/.config/git/
 ln -s $arch_setup/git/ignore ~/.config/git/
 
+# symlink .vimrc and other stuff
 for file in $dotfiles/.*; do
 	[ -f $file ] \
 		&& ln -sf $file ~/

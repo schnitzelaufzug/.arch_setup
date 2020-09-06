@@ -1,5 +1,5 @@
 #install i3-gaps
-sudo pacman -S xorg-server xorg-xinit xorg-xinput xf86-input-libinput acpi i3-gaps i3blocks i3lock dmenu zsh the_silver_searcher feh flameshot lsd xfce4-terminal firefox alsa-utils weechat gvim php ctags openssh filezilla docker docker-compose unzip --noconfirm
+sudo pacman -S xorg-server xorg-xinit xorg-xinput xf86-input-libinput acpi i3-gaps i3blocks i3lock dmenu zsh the_silver_searcher feh flameshot lsd xfce4-terminal firefox alsa-utils weechat gvim php ctags openssh filezilla docker docker-compose unzip jq --noconfirm
 pacman -S compton --noconfirm
 
 #Install oh-my-zsh
@@ -13,10 +13,12 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === 'e0012edf3e80b6978849f
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 composer global require friendsofphp/php-cs-fixer
+
 #install php-stan
 #composer require --dev phpstan/phpstan
 
 pacman -S base-devel
+
 git clone https://aur.archlinux.org/yay.git ~/yay 
 cd ~/yay && makepkg -si
 yay -S nerd-fonts-hack --noconfirm
