@@ -1,0 +1,40 @@
+{
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "City Lights",
+    "editor.lineHeight": 32,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [80,120],
+    "workbench.editor.enablePreview": false,
+    "explorer.autoReveal": false,
+    "vim.leader": ",",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before":["<leader>", "<space>"],
+            "commands": [
+                ":nohl",
+            ]
+        },
+    ],
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.handleKeys": {
+        "<C-p>": false,
+        "<C-w>": false,
+        "<C-b>": false,
+    },
+    "files.associations": {
+        "*.twig": "twig"
+    },
+    "vim.statusBarColorControl": false,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "city-lights-icons-vsc-light",
+}
