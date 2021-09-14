@@ -192,13 +192,15 @@ bar {
         height 25
 }
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 bindsym $mod+shift+n workspace next
 bindsym $mod+shift+p workspace prev
 bindsym $mod+shift+i exec ~/.arch_setup/scripts/i3-new-workspace
-bindsym $mod+shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
-bindsym $mod+Mod1+l exec i3lock
+#bindsym $mod+shift+minus move scratchpad
+#bindsym $mod+minus scratchpad show
+bindsym $mod+Mod1+l exec ~/.arch_setup/scripts/lock-screen.sh
 bindsym $mod+p exec flameshot gui
-bindsym Control+p exec ~/.arch_setup/scripts/toggle-monitore.sh
-bindsym $mod+shift+u exec ~/.arch_setup/scripts/new-bg.sh
+#bindsym Control+p exec ~/.arch_setup/scripts/toggle-monitore.sh
+#bindsym $mod+shift+u exec ~/.arch_setup/scripts/new-bg.sh
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5

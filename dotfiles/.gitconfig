@@ -5,3 +5,9 @@
     editor = vim
     excludesfile = ~/.config/git/ignore
 	autocrlf = input
+[sendemail]
+    smtpserver = smtp.gmail.com
+    smtpserverport = 587
+    smtpencryption = tls
+    smtpuser = 
+    smtppass = 

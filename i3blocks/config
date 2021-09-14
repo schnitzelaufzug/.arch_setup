@@ -28,6 +28,12 @@ command=~/.config/i3blocks/scripts/$BLOCK_NAME/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+# Nord VPN Status
+[nordvpn]
+label=NordVPN
+separator=true
+interval=10
+color=#00FF00
 
 # Draht Driller Email
 [gmail]

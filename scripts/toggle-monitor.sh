@@ -9,4 +9,4 @@ string="--same-as"
 monitor=$(xrandr | grep -w 'connected' | cut -d ' ' -f1 | sed -n 2p)
 
 # Set Monitor to left or right side
-xrandr --auto --output $monitor --mode 1920x1080 $string eDP1
+xrandr --auto --output $monitor --mode 1920x1080 $string eDP

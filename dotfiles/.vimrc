@@ -2,6 +2,7 @@ set nocompatible			    " be iMproved, required
 so ~/.vim/plugins.vim			" imports vundle plugin script
 
 syntax enable
+filetype plugin indent on       " Indentation for C programming
 
 let mapleader = ','
 set backspace=indent,eol,start
@@ -18,9 +19,11 @@ set clipboard=unnamedplus       " Set copy and paste to system clipboard
 "colorscheme atom-dark-256		" set colorscheme
 "set t_CO=256					" forces terminal to use 256 colors
 colorscheme onedark
+"colorscheme summerfruit256
 set tabstop=4					" sets <tab> to 4
 set softtabstop=4				" number of tabstops a tab will make or delete
 set shiftwidth=4				" when indentin with '>', use 4 spaces width
+set noexpandtab
 set expandtab					" on pressing tab insert 4 spaces
 set number
 set relativenumber
@@ -29,6 +32,7 @@ set cursorline					" higlights current line of curser
 set scrolloff=2                 " Keep two lines below or above the cursor
 set wildmode=longest,list,full
 set wildmenu					" displays a graphical interface for tabcompletes
+set title
 
 "set listchars=tab:\|\ 
 "set list
