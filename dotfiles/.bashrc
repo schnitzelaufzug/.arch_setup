@@ -114,6 +114,9 @@ fi
 
 #=============================== Config ================================
 
+# Add golang
+export PATH="/usr/local/go/bin:$PATH"
+
 # Add Composer to $PATH
 export PATH="~/.config/composer/vendor/bin:$PATH" 
 
@@ -134,12 +137,6 @@ HISTTIMEFORMAT="%F $T "
 set -o vi
 
 # aliase
-alias checkupdates='sudo apt-get update && sudo apt-get dist-upgrade'
-alias nightmode='xrandr --output eDP1 --brightness 0.7'
-alias daymode='xrandr --output eDP1 --brightness 1'
-alias superdaymode='xrandr --output eDP1 --brightness 1.5'
-
-
 alias ..='cd ..'
 alias ls='ls -hNl --color=auto --group-directories-first'
 alias rm='rm -rf'

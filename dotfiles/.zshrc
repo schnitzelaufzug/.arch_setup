@@ -1,8 +1,12 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/AppImages:$HOME/.symfony/bin:$HOME/.composer/vendor/bin:$HOME/.scripts:$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/AppImages:$HOME/.symfony/bin:$HOME/.composer/vendor/bin:/home/phil/.config/composer/vendor/bin:$HOME/.scripts:$HOME/bin:/usr/local/bin:$PATH:$HOME/.symfony5/bin:$PATH:/usr/local/go/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/phil/.oh-my-zsh"
+
+alias homescreen='xrandr --output DisplayPort-0 --mode 2560x1440 --output eDP --off'
+alias vim='nvim'
+alias dep='vendor/bin/dep'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,

@@ -96,9 +96,9 @@ nmap <leader><space> :nohlsearch<cr>
 "mapping jk to esc to exit insert mode
 imap jk <esc>
 
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
+"inoremap " ""<left>
+"inoremap ' ''<left>
+"inoremap ( ()<left>
 inoremap [ []<left>
 inoremap [<CR> [<CR>]<ESC>O
 inoremap { {}<left>
@@ -140,3 +140,8 @@ augroup autosourceing
 	autocmd BufWritePost .vimrc source %
 augroup END
 
+"If we reopen a file vim jummps back to the same line we left"
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif

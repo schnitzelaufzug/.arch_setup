@@ -11,3 +11,5 @@
     smtpencryption = tls
     smtpuser = 
     smtppass = 
+[pull]
+	rebase = false
