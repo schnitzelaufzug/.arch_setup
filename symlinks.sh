@@ -42,6 +42,11 @@ ln -s $arch_setup/compton/config ~/.config/compton/
     || mkdir ~/.config/git/
 ln -s $arch_setup/git/ignore ~/.config/git/
 
+[ -d ~/.config/nvim/ ] \
+    && rm -rf ~/.config/nvim/* \
+    || mkdir ~/.config/nvim/
+ln -s $arch_setup/nvim/* ~/.config/nvim/
+
 # symlink .vimrc and other stuff
 for file in $dotfiles/.*; do
 	[ -f $file ] \
