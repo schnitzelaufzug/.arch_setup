@@ -24,7 +24,8 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c 
 
 # Start compton on i3 startup
-exec_always --no-startup-id compton --config ~/.config/compton/config
+#exec_always --no-startup-id compton --config ~/.config/compton/config
+exec_always --no-startup-id picom 
 
 # Start feh and set wallpaper on startup
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpapers/lx.jpg
@@ -192,12 +193,21 @@ bar {
         height 25
 }
 
+assign [class="Brave-browser"] 1
+assign [class="Bitwarden"] 2
+assign [class="Slack"] 3
+
+exec brave
+exec rambox 
+exec bitwarden-desktop 
+exec slack
+
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 bindsym $mod+shift+n workspace next
 bindsym $mod+shift+p workspace prev
 bindsym $mod+shift+i exec ~/.arch_setup/scripts/i3-new-workspace
-#bindsym $mod+shift+minus move scratchpad
-#bindsym $mod+minus scratchpad show
+bindsym $mod+shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
 bindsym $mod+Mod1+l exec ~/.arch_setup/scripts/lock-screen.sh
 bindsym $mod+p exec flameshot gui
 #bindsym Control+p exec ~/.arch_setup/scripts/toggle-monitore.sh
