@@ -1,4 +1,0 @@
-bitwarden-bin
-nerd-fonts-hack
-vscodium-bin
-yay
