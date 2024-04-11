@@ -1,6 +1,5 @@
 #install i3-gaps
 sudo pacman -S xorg-server xorg-xinit xorg-xinput xf86-input-libinput acpi i3-gaps i3blocks i3lock dmenu zsh the_silver_searcher feh flameshot lsd xfce4-terminal firefox alsa-utils gvim php ctags openssh filezilla docker docker-compose unzip jq --noconfirm
-pacman -S compton --noconfirm
 
 #Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -17,11 +16,13 @@ composer global require friendsofphp/php-cs-fixer
 #install php-stan
 #composer require --dev phpstan/phpstan
 
-pacman -S base-devel
+sudo pacman -S --needed base-devel 
 
 git clone https://aur.archlinux.org/yay.git ~/yay 
 cd ~/yay && makepkg -si
 yay -S nerd-fonts-hack --noconfirm
-yay -S bitwarden-bin --noconfirm
-yay -S vscodium-bin --noconfirm
+yay -S bitwarden --noconfirm
 yay -S slack-desktop --noconfirm
+yay -S brave --noconfirm
+# pandoc is for text-to-pdf cli
+yay -S pandoc-bin
