@@ -20,6 +20,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'joshdick/onedark.vim'
 Plugin 'lumiliet/vim-twig'
 Plugin 'ervandew/supertab'
+Plugin 'tomlion/vim-solidity'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
